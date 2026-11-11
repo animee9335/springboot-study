@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class StudyController01 {
 
+    private String test;
+
     @Operation(summary = "GET 요청", description = "GET 방식으로 호출하면 고정 문자열을 반환합니다.")
     @ApiResponses({
             @ApiResponse(responseCode = "200", description = "성공"),
